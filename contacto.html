@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html= lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | Suecia</title>
+    <link rel="stylesheet" type="text/css" href="css/estilosCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+</head>
+<body class="container-fluid">
+	<div class="header">
+    <div class="row"> 
+      <div class="col-sm-1 col-2">   
+        <a href="index.html"><img width="40px" height="40px" src="css/media/inicio.png" alt="inicio"></a>
+      </div>      
+      <div class="col-sm-11 col-10" style="text-align: end;">   
+        <a title="twitter" href="http://www.twitter.com" target="_blank"><img src="css/media/twitter.png" alt="twitter"></a>
+        <a title="facebook" href="http://www.facebook.com" target="_blank"><img src="css/media/facebook.png" alt="facebook"></a>
+        <a title="instagram" href="http://www.instagram.com" target="_blank"><img src="css/media/instagram.png" alt="instagram"></a>
+      </div>  
+    </div>
+
+    <div class="row">   
+      <div class="col-sm-6 col-12 encaresponsivelogo">    
+        <img class="encaresponsivelogo__logoencabezado" src="css/media/logo-azul.png" alt="logo">
+      </div>      
+      <div class="col-sm-6 col-12" style="align-self: center;">
+        <p class="textologo">SUECIA</p>
+      </div>      
+    </div>    
+
+    <div class="row">   
+      <div class="col-sm-12" >   
+        <p id="formatoleyenda">Somos mucho más que una marca de ropa, somos tendencia.</p>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div class="col-sm-2 col-2" >   
+        <div class="dropdown">
+          <div type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="css/media/menu.png" alt="menu">
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="nosotros.html">Nosotros</a>
+            <a class="dropdown-item" href="novedadespromo.html">Novedades y Promociones</a>
+            <a class="dropdown-item" href="tienda.html">Tienda</a>
+            <a class="dropdown-item" href="contacto.html">Contacto</a>
+            <a class="dropdown-item" href="faq.html">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 col-10 carrito" >   
+        <img src="css/media/carrito.png" alt="carrito">    
+      </div>
+    </div>    
+  </div>
+			
+
+
+	<div class="p-contacto">   
+    <div class="row"> 
+      <div class="col-sm-6 col-12"> 
+        <div class="formulario"> 
+			  <p>Contacto</p>
+			  <form>
+         <div class="form-group">
+			    	Nombre y Apellido <br>
+  					<input type="text" class="form-control form-control-sm" id="nombreapellido">
+				  </div>			
+				
+          <div class="form-group">
+				  	Email <br>
+				  	<input type="email" class="form-control form-control-sm" id="email" placeholder="mail@dominio.com.ar">
+				  </div>		
+				
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Confirmar correo</button>
+					<div class="modal" id="myModal">
+  					<div class="modal-dialog">
+    					<div class="modal-content">
+   							<div class="modal-header">
+        						<h4 class="modal-title">IMPECABLE!</h4>
+        						<button type="button" class="close" data-dismiss="modal">&times;</button>
+      						</div>
+      						<div class="modal-body">El correo introducido es correcto.</div>
+				      		<div class="modal-footer">
+        						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    						</div>
+    					</div>
+  					</div>
+				  </div>
+			    <br><br>
+				  
+          <div class="form-group">
+  					<label for="sel1">Tipo de Comentario:</label>
+  					<select class="form-control form-control-sm" id="tipcomentario">
+    					<option>Consultas</option>
+    					<option>Sugerencias</option>
+    					<option>Reclamos</option>
+    					<option>Cambios y devoluciones</option>
+  					</select>
+				  </div>
+				
+				  <div class="form-group">
+  					<label for="comentarios">Comentarios:</label>
+ 					  <br> 
+  					<textarea class="form-control form-control-sm" rows="5" cols="30" id="comentarios"></textarea>
+				  </div>
+				
+	  			<div class="form-group">
+	    			<label>
+	      			<input type="checkbox" checked=""> Deseo recibir el newsletter en mi correo.
+	    			</label>
+				  </div>
+				
+	  			<input type="reset" class="btn btn-info" value="Limpiar formulario">
+				  <input type="submit" class="btn btn-success" value="Enviar formulario" formtarget="_blank">
+			  </form>
+        </div> 
+      </div>  
+	    <div class="col-sm-6 col-12 cajaimagen"> 
+			    <img class="imagen" src="css/media/contactos.jpg" alt="contactos">
+		  </div> 
+	  </div> 
+	</div>
+  
+    <footer class="seccionfooter"> <!--Footer-->
+        <div class="row">
+            <div class="col-md col-sm col-12 divlinkfooter">   
+                <a class="divlinkfooter__estilolink" href="nosotros.html">Nosotros</a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-12 divlinkfooter">   
+                <a class="divlinkfooter__estilolink" href="novedadespromo.html">Novedades y Promociones</a>
+            </div>
+            <div class="col-md col-sm col-12 divlinkfooter">   
+                <a class="divlinkfooter__estilolink" href="tienda.html">Tienda</a>
+            </div>
+            <div class="col-md col-sm col-12 divlinkfooter">   
+                <a class="divlinkfooter__estilolink" href="contacto.html">Contacto</a>
+            </div>
+            <div class="col-md col-sm col-12 divlinkfooter">   
+                <a class="divlinkfooter__estilolink" href="faq.html">FAQ</a>
+            </div>
+            <div class="col-md-6 col-sm-6 col-12 divlogfooter">   
+                <img clas="divlogfooter__logofooter" width="80" height="80" src="css/media/logo-azul.png" alt="logo">
+            </div>
+        </div>
+    </footer>   
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* NOVEDADES */
+
+.seccionnov  {
+	width: 98%;
+	height: 100%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: 0px;
+	margin-right: 0px;
+	cursor: pointer;
+}
+
+#carouselExampleControls {
+	padding: 0px;
+}
+
+/* ANIMACION */
+
+.seccionani  {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+/* PROMOCONTACTO */
+
+.seccionpro {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 3%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.caja-imagen  {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 0px 15px 25px rgba(0,0,0,0.9);
+	cursor: pointer;
+}
+.imagen-procon {
+	width: 100%;
+	height: 100%;
+	transition: all 500ms ease-out;
+}
+.texto  {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	transition: all 500ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+}
+
+.caja-imagen:hover > .imagen-procon{
+	transform: scale(1.1);
+}
+.caja-imagen:hover > .texto {
+	opacity: 1;
+	visibility: visible;
+}
+
+.caja-imagen:hover > .texto h2 {
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
+
+.caja-imagen .texto h2 {
+	color: #ffffff;
+	font-weight: bold;
+	margin-bottom: 120px;
+	transition: all 500ms ease-out;
+	margin-top: 30px;
+}
+.caja-imagen .texto p {
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 0.5;
+	widht: 100%;
+	margin:auto;
+}

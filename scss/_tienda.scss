@@ -1,0 +1,65 @@
+/*********************************************/
+/*********************************************/
+/****************  TIENDA  *******************/
+/*********************************************/
+/*********************************************/
+
+.cajaimagentienda {
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+.imagentienda {
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+.imagenesvarias {
+	text-align: center;	
+	align-self: center;
+	justify-self: center;
+	cursor: pointer;
+}
+
+.imagencabtienda {
+	height: 80%;
+	width: 80%;
+	transition: all 500ms ease-out;
+}
+
+.imagenesvarias:hover > .imagencabtienda{
+	transform: scale(1.05);
+}
+
+.novedades-p {
+	font-size: 25px;
+	font-weight: bold;
+}
+.imagennovedad {
+	height: 80%;
+    width: 80%;
+    transition: all 500ms ease-out;
+}
+.imagenesvarias p {
+	color: white;
+	margin-top: 4%;
+}
+.nuevoingreso {
+	margin-top: 3%;
+	text-align: center;
+	color: white;
+}
+
+.imagenesvarias:hover > .imagennovedad{
+	transform: scale(1.05);
+}
+
+@media (max-width: 575.98px) {
+	.imagenesvarias {
+	    margin-top: 3%;
+    }
+    .nuevoingreso {
+	    margin-top: 15%;
+    }
+
+}

@@ -1,0 +1,85 @@
+/*********************************************/
+/*********************************************/
+/***************  CONTACTO  ******************/
+/*********************************************/
+/*********************************************/
+
+.p-contacto {
+	width: 100%;
+	height: 100%;
+	background-color: darkblue;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 20px;
+	text-align: -webkit-center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 3% 3% 3% 3%;
+}
+.formulario p {
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 30px;
+	color: black;
+	margin-top: 1px;
+}
+.formulario {
+	border-radius: 20px;
+	background-color: #ffffff; 
+	color: black;
+	font-size: 15px;
+	padding: 20px 20px 20px 20px;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+
+}
+.cajaimagen {
+	align-self: center;
+}
+.imagen {
+	border-radius: 20px;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	animation-duration: 4s;
+    animation-name: trasladar;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trasladar {
+	0% {
+    	transform: translate(50%, -20%);
+	}
+	25% {
+    	transform: translate(0%, 100%);
+	}
+	50% {
+	    transform: translate(-50%, 0%);
+	}
+	75% {
+    	transform: translate(0%, -100%);
+	}
+	100% {
+    	transform: translate(50%, -20%);
+	}
+}
+
+@media (max-width: 575.98px) {
+	.formulario p {
+	    font-size: 18px;
+    }
+	.formulario {
+		font-size: 10px;
+	}
+	.cajaimagen {
+		margin-top: 3%;
+	}	
+	.imagen {
+		animation-duration: 0s;
+		width: 100%;
+		height: 80%;
+	}	
+}

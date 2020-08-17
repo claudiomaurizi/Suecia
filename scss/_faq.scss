@@ -1,0 +1,135 @@
+/*********************************************/
+/*********************************************/
+/******************  FAQ  ********************/
+/*********************************************/
+/*********************************************/
+
+.faq {
+  width: 70%;
+  height: 100%;
+  background-image: linear-gradient(to bottom,#FFF97C,#FFFDCD);
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  text-align: -webkit-center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+.faq-section{
+    margin: 20px 20px 20px 20px;
+}
+
+.faq-section h1 {
+	font-weight: bold;
+	font-family: sans-serif;
+	color: darkblue;
+}
+
+.faq-section p{
+	display: none;
+}
+
+.faq-section ol{
+	display: none;	
+}
+
+.faq-section input{
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+  display: none\9;
+  margin: 0;
+  width: 50%;
+  height: 10%;
+}
+
+.faq-section input[type=checkbox]:checked~p{
+  display: block;
+  color: black;
+  font-weight: bold;
+  font-size: .85em;
+  text-align: left;
+  text-overflow: clip;
+  white-space: normal;
+  overflow: visible;
+  margin-left: 10px;
+}
+
+.faq-section input[type=checkbox]:checked~ol{
+  display: block;
+  color: black;
+  font-weight: bold;
+  font-size: .85em;
+  text-align: left;
+  text-overflow: clip;
+  white-space: normal;
+  overflow: visible;
+  margin-left: 10px;
+}
+
+.faq-section label{
+  font-size: 1.2em;
+  background: #eee;
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: 7px 10px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  border-left: 3px solid #888;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  transition: all .15s ease-out;
+  color: black;
+}
+
+.faq-section label::selection{
+  background: none;
+}
+
+.faq-section label:hover{
+  background: #ffffff;
+}
+
+.faq-section input[type=checkbox]:checked~label{
+  border-color: #ffffff;
+  background: #ffffff;
+  color: white;
+  background-image: linear-gradient(to bottom,#011533,#033B8E);
+  box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+.faq-section label::before{
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  margin-top: -6px;
+  border: 6px solid transparent;
+  border-left-color: inherit;
+}
+
+.faq-section input[type=checkbox]:checked~label::before{
+  border: 6px solid transparent;
+  border-top-color: white;
+  margin-top: -3px;
+  right: 10px;
+}
+
+@media (max-width: 575.98px) {
+  .faq-section h1 {
+    font-size: 1.5rem;
+  }
+ .faq-section input[type=checkbox]:checked~p {
+    font-size: .7rem;
+  }
+  .faq-section input[type=checkbox]:checked~ol{
+    font-size: .7rem;
+  }
+  .faq-section label{
+    font-size: .8rem;
+  }
+}

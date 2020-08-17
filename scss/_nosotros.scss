@@ -1,0 +1,48 @@
+/*********************************************/
+/*********************************************/
+/***************  NOSOTROS  ******************/
+/*********************************************/
+/*********************************************/
+
+.nosotros {
+	width: 70%;
+	height: 100%;
+	background-color: white;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 20px;
+	text-align: -webkit-center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: auto;
+	margin-left: auto;
+ }
+.texto-nosotros {
+	color: black;
+	width: 80%;
+	margin-top: 2%;
+}
+.formatotextotit {
+	font-size: 24px;
+}
+.formatotextop {
+	font-size: 12px;
+}
+.imagen-nosotros {
+	margin-top: 2%; 
+	margin-bottom: 3%;
+	border-radius: 20px;
+	width: 100%;
+}
+
+@media (max-width: 575.98px) {
+	.nosotros {
+	    width: 100%;
+    }
+	.formatotextotit {
+		font-size: 18px;
+	}
+	.formatotextop {
+		font-size: 6px;
+	}
+}
