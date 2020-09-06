@@ -2,17 +2,14 @@ html {
   font-size: 16px;
   font-family: 'Krub', sans-serif;
   font-weight: 400;
-  color: #ffffff;
-  background-image: url("media/fondo.jpg"); }
+  color: #ffffff; }
 
-.container-fluid {
-  background-image: url("media/fondo.jpg");
-  background-size: 100%;
-  background-attachment: fixed; }
+body {
+  background-image: url("media/fondo.jpg"); }
 
 /* HEADER */
 .header {
-  background-image: linear-gradient(to bottom, #db7c00, #dbaf00);
+  background-image: url("media/fondo.jpg");
   height: 100%;
   width: 100%;
   padding: 10px 10px 10px 10px; }
@@ -84,6 +81,23 @@ html {
     justify-content: center;
     font-size: .9em; } }
 
+/* PREFOOTER */
+.prefooter {
+  background-color: white;
+  color: black;
+  padding-top: 3%;
+  padding-bottom: 3%; }
+
+.prefooter-h4 {
+  text-align: end;
+  font-weight: bold; }
+
+.twitter {
+  text-align: end; }
+
+.facebook {
+  text-align: center; }
+
 /* FOOTER */
 .seccionfooter {
   width: 100%;
@@ -120,13 +134,23 @@ html {
     font-size: .5em; }
   .divlogfooter {
     text-align: center;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+  .prefooter-h4 {
+    text-align: center;
+    font-weight: bold; }
+    .prefooter-h4 h4 {
+      font-size: 1rem; }
+  .twitter {
+    text-align: center; }
+  .facebook {
+    text-align: center; }
+  .instagram {
+    text-align: center; } }
 
 /* NOVEDADES */
 .seccionnov {
-  width: 98%;
+  width: 100%;
   height: 100%;
-  margin-top: 3%;
   margin-bottom: 3%;
   margin-left: 0px;
   margin-right: 0px;
@@ -135,12 +159,33 @@ html {
 #carouselExampleControls {
   padding: 0px; }
 
+span.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 10px; }
+
+span.carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 10px; }
+
+.doradoblanco {
+  color: darkblue;
+  background-color: gold;
+  width: 40%;
+  border-radius: 25px;
+  -webkit-text-stroke: 0.1px white; }
+
 /* ANIMACION */
 .seccionani {
   width: 100%;
   height: 100%;
   margin-bottom: 3%;
   text-align: center; }
+
+/* QUEDATE EN CASA */
+#quedateencasa {
+  color: white;
+  text-align: center;
+  margin-bottom: 3%; }
 
 /* PROMOCONTACTO */
 .seccionpro {
@@ -176,6 +221,9 @@ html {
   visibility: hidden;
   text-align: center; }
 
+a.decoration-off:hover {
+  text-decoration: none; }
+
 .caja-imagen:hover > .imagen-procon {
   transform: scale(1.1); }
 
@@ -201,6 +249,12 @@ html {
   widht: 100%;
   margin: auto; }
 
+@media (max-width: 575.98px) {
+  #quedateencasa h2 {
+    font-size: 1rem; }
+  #quedateencasa p {
+    font-size: .6rem; } }
+
 /*********************************************/
 /*********************************************/
 /***************  CONTACTO  ******************/
@@ -214,7 +268,6 @@ html {
   align-items: center;
   border-radius: 20px;
   text-align: -webkit-center;
-  margin-top: 2%;
   margin-bottom: 2%;
   margin-right: auto;
   margin-left: auto;
@@ -238,28 +291,12 @@ html {
   text-align: left; }
 
 .cajaimagen {
-  align-self: center; }
-
-.imagen {
-  border-radius: 20px;
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  animation-duration: 4s;
-  animation-name: trasladar;
-  animation-iteration-count: infinite; }
-
-@keyframes trasladar {
-  0% {
-    transform: translate(50%, -20%); }
-  25% {
-    transform: translate(0%, 100%); }
-  50% {
-    transform: translate(-50%, 0%); }
-  75% {
-    transform: translate(0%, -100%); }
-  100% {
-    transform: translate(50%, -20%); } }
+  align-self: flex-end; }
+  .cajaimagen ul li {
+    color: gold;
+    text-align: left; }
+    .cajaimagen ul li span {
+      color: white; }
 
 @media (max-width: 575.98px) {
   .formulario p {
@@ -267,11 +304,7 @@ html {
   .formulario {
     font-size: 10px; }
   .cajaimagen {
-    margin-top: 3%; }
-  .imagen {
-    animation-duration: 0s;
-    width: 100%;
-    height: 80%; } }
+    margin-top: 3%; } }
 
 /*********************************************/
 /*********************************************/
@@ -281,12 +314,11 @@ html {
 .faq {
   width: 70%;
   height: 100%;
-  background-image: linear-gradient(to bottom, #FFF97C, #FFFDCD);
+  background-color: #f1ce17;
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
   text-align: -webkit-center;
-  margin-top: 2%;
   margin-bottom: 2%;
   margin-right: auto;
   margin-left: auto; }
@@ -295,9 +327,9 @@ html {
   margin: 20px 20px 20px 20px; }
 
 .faq-section h1 {
-  font-weight: bold;
   font-family: sans-serif;
-  color: darkblue; }
+  color: white;
+  font-weight: 100; }
 
 .faq-section p {
   display: none; }
@@ -402,7 +434,6 @@ html {
   align-items: center;
   border-radius: 20px;
   text-align: -webkit-center;
-  margin-top: 2%;
   margin-bottom: 2%;
   margin-right: auto;
   margin-left: auto; }
@@ -413,10 +444,13 @@ html {
   margin-top: 2%; }
 
 .formatotextotit {
-  font-size: 24px; }
+  font-size: 36px;
+  margin-bottom: 3%; }
 
 .formatotextop {
-  font-size: 12px; }
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 4%; }
 
 .imagen-nosotros {
   margin-top: 2%;
@@ -438,8 +472,7 @@ html {
 /*********************************************/
 /*********************************************/
 .cajaimagentienda {
-  margin-bottom: 3%;
-  margin-top: 3%; }
+  margin-bottom: 3%; }
 
 .imagentienda {
   height: 100%;
@@ -499,7 +532,6 @@ html {
   justify-content: space-around;
   align-items: center;
   text-align: -webkit-center;
-  margin-top: 2%;
   margin-right: auto;
   margin-left: auto;
   padding: 3% 3% 3% 3%; }

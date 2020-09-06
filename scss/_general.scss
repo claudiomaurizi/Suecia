@@ -3,18 +3,14 @@ html {
 	font-family: 'Krub', sans-serif;
 	font-weight: 400;
 	color: #ffffff;
+}
+body { 
 	background-image: url("media/fondo.jpg");
 }
-.container-fluid {
-	background-image: url("media/fondo.jpg");
-	background-size: 100%;
-	background-attachment: fixed;
-}
-
 /* HEADER */
 
 .header {
-	background-image: linear-gradient(to bottom,#db7c00,#dbaf00);
+	background-image: url("media/fondo.jpg");
 	height: 100%;
 	width: 100%;
 	padding: 10px 10px 10px 10px;
@@ -107,6 +103,27 @@ html {
 	}
 }
 
+/* PREFOOTER */
+
+.prefooter {
+	background-color: white;
+	color: black;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.prefooter-h4 {
+	text-align: end;
+	font-weight: bold;
+}
+.twitter {
+	text-align: end;
+}
+.facebook {
+	text-align: center;
+}
+.instagram {
+}
 /* FOOTER */
 
 .seccionfooter {
@@ -148,5 +165,22 @@ html {
 	.divlogfooter  {
 		text-align: center;
 		padding-right: 0px;
+	}
+	.prefooter-h4 {
+	text-align: center;
+	font-weight: bold;
+		   h4 {
+		   		font-size: 1rem; 
+		   	}
+
+    }
+    .twitter {
+	text-align: center;
+	}
+	.facebook {
+	text-align: center;
+	}
+	.instagram {
+	text-align: center;
 	}
 }	

@@ -7,12 +7,11 @@
 .faq {
   width: 70%;
   height: 100%;
-  background-image: linear-gradient(to bottom,#FFF97C,#FFFDCD);
+  background-color: #f1ce17;
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
   text-align: -webkit-center;
-  margin-top: 2%;
   margin-bottom: 2%;
   margin-right: auto;
   margin-left: auto;
@@ -23,9 +22,9 @@
 }
 
 .faq-section h1 {
-	font-weight: bold;
 	font-family: sans-serif;
-	color: darkblue;
+	color: white;
+  font-weight: 100;
 }
 
 .faq-section p{
